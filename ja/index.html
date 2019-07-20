@@ -38,6 +38,8 @@
 <div class="bg">
 <img src="/images/tokyowesterns.png" height="200" />
 <img src="/images/cbctf.png" height="200" />
+<br /><br /><br />
+<div id="DateCountdown" data-date="2019-08-31 00:00:00" style="width: 100%;"></div>
 </div>
 
 <div class="contents">
@@ -97,36 +99,37 @@ TokyoWesterns CTFは, チームTokyoWesternsが主催するセキュリティコ
   <li><a href="https://uecmma.github.io/mmactf/">MMA CTF 1st 2015</a></li>
 </ul>
 
-
-    <script>
-    $("#DateCountdown").TimeCircles({
-    "animation": "ticks",
-    "bg_width": 0.1,
-    "fg_width": 0.02,
-    "circle_bg_color": "#60686F",
-    "time": {
-        "Days": {
-            "text": "d",
-            "color": "#333",
-            "show": true
-        },
-        "Hours": {
-            "text": "h",
-            "color": "#333",
-            "show": true
-        },
-        "Minutes": {
-            "text": "m",
-            "color": "#333",
-            "show": true
-        },
-        "Seconds": {
-            "text": "s",
-            "color": "#333",
-            "show": true
-        }
+<script>
+$("#DateCountdown").TimeCircles({
+"animation": "ticks",
+"bg_width": 0.1,
+"fg_width": 0.02,
+"circle_bg_color": "#60686F",
+"time": {
+    "Days": {
+        "text": "日",
+        "color": "#333",
+        "show": true
+    },
+    "Hours": {
+        "text": "時",
+        "color": "#333",
+        "show": true
+    },
+    "Minutes": {
+        "text": "分",
+        "color": "#333",
+        "show": true
+    },
+    "Seconds": {
+        "text": "秒",
+        "color": "#333",
+        "show": true
     }
+}
 });
-    </script>
+</script>
+
+
   </body>
 </html>
